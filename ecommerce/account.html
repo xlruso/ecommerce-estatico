@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Productos - Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> 
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="account.html">Cuenta</a></li>
+    
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+  </div>
+
+<!-----------account-page--------->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Registro</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button  type="submit" class="btn">Login</button>
+                        <a href="">¿Olvidaste tu Contraseña?</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Usuario">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <button  type="submit" class="btn">Registro</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <!-----------footer--------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descarga nuestra Aplicación</h3>
+                    <p>Descarga la aplicación oficial para Android y IOS.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store?hl=es_AR&gl=US"><img src="images/play-store.png"></a>
+                        <a href="https://www.apple.com/la/app-store/"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Nuestro propósito es hacer que el placer y los beneficios de los deportes sean accesibles para muchos de manera sostenible.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links Útiles</h3>
+                    <li>Cupones</li>
+                    <li>Preguntas Frecuentes</li>
+                    <li>Politica de Devolución</li>
+                    <li>Sumate a nosotros</li>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Podes seguirnos en</h3>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <a href=""></a><li>YouTube</li>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Todos los derechos reservados.</p>
+    </div>
+</div>
+
+<!----------- js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight= "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else
+    { 
+        MenuItems.style.maxHeight = "0px";
+    }
+    }
+
+
+</script>
+
+<!----------- js for toggle form------->
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
+
+
+</body>
+</html>

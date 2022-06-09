@@ -1,0 +1,74 @@
+[
+    {
+      "precio": 50,
+      "id": 1,
+      "title": "Remera Roja Puma",
+      "image": "images/product-1.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 2,
+      "title": "Zapatillas Negras HRX",
+      "image": "images/product-2.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 3,
+      "title": "Pantalon Gris",
+      "image": "images/product-3.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 4,
+      "title": "Chomba Puma Azul",
+      "image": "images/product-4.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 5,
+      "title": "Zapatillas Grises",
+      "image": "images/product-5.jpg"
+    },
+    {
+      "precio": 50,
+      "id": 6,
+      "title": "Remera Puma Negra",
+      "image": "images/product-6.jpg"
+    },
+    {
+        "precio": 50,
+        "id": 7,
+        "title": "Medias X3 Negro, Blanco, Gris",
+        "image": "images/product-7.jpg"
+      },
+      {
+        "precio": 50,
+        "id": 8,
+        "title": "Reloj Fossil Negro",
+        "image": "images/product-8.jpg"
+      },
+      {
+        "precio": 50,
+        "id": 9,
+        "title": "Reloj Roadster Negro",
+        "image": "images/product-9.jpg"
+      },
+      {
+        "precio": 50,
+        "id": 10,
+        "title": "Zapatilla Negra y Roja",
+        "image": "images/product-10.jpg"
+      },
+      {
+        "precio": 50,
+        "id": 11,
+        "title": "Zapatillas Running Grises",
+        "image": "images/product-11.jpg"
+      },
+      {
+        "precio": 50,
+        "id": 12,
+        "title": "Pantalón Nike Negro",
+        "image": "images/product-12.jpg"
+      }
+  ]
